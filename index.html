@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Adoption Center</title>
+
+    <!-- Website Symbol / Favicon -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/194/194279.png">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Pet Adoption Center</h1>
+        <p>Find your new best friend today 🐾</p>
+    </header>
+
+    <div class="search-filter">
+        <input type="text" id="searchInput" placeholder="Search by name..." />
+        <select id="filterType">
+            <option value="all">All Pets</option>
+            <option value="dog">Dogs</option>
+            <option value="cat">Cats</option>
+        </select>
+    </div>
+
+    <div class="pet-container" id="petContainer"></div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span id="closeBtn">&times;</span>
+            <h2 id="petName"></h2>
+            <p id="petDetails"></p>
+            <button id="adoptBtn">Adopt Now</button>
+        </div>
+    </div>
+
+    <!-- Magical Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>© 2025 Pet Adoption Center. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
